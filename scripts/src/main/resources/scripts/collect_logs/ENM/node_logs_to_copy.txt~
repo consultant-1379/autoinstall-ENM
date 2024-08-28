@@ -1,0 +1,4 @@
+/var/log/boot.log boot.log
+/var/log/mcollective-audit.log mcollective-audit.log
+/var/VRTSvcs/log/ VRTSvcs
+/var/log/audit/audit.log audit.log

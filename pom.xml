@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Each team will need to update the following section to reflect the
+        correct parent for their test cases -->
+    <parent>
+        <groupId>com.ericsson.litp</groupId>
+        <artifactId>integration</artifactId>
+        <version>2.47.1</version>
+    </parent>
+
+    <!-- Each team will need to update the following section with the correct
+        information -->
+    <groupId>com.ericsson.nms.litp.taf</groupId>
+    <artifactId>autoinstall-ENM</artifactId>
+    <version>1.0.349-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <aspectj.version>1.8.3</aspectj.version>
+        <taf_version>2.59.1</taf_version>
+    </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.ericsson.cifwk.taf</groupId>
+                    <artifactId>taf-maven-plugin</artifactId>
+                    <version>${taf_version}</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>clean</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>com.ericsson.cifwk.taf</groupId>
+		    <artifactId>taf-allure-maven-plugin</artifactId>
+                    <version>${taf_version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>com.ericsson.cifwk.taf</groupId>
+                    <artifactId>taf-allure-old-maven-plugin</artifactId>
+                    <version>${taf_version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>com.ericsson.cifwk.taf</groupId>
+                <artifactId>taf-maven-plugin</artifactId>
+	        <version>${taf_version}</version>
+            </plugin>
+        </plugins>
+    </build>
+
+  <scm>
+    <tag>autoinstall-ENM-1.0.39</tag>
+    <developerConnection>${ericsson.scm.url}</developerConnection>
+  </scm>
+
+  <modules>
+    <module>ERICTAFlitpautoinstall-ENM_CXP9031989</module>
+    <module>scripts</module>
+    <module>test-pom-ERICTAFlitpautoinstall-ENM</module>
+  </modules>
+</project>

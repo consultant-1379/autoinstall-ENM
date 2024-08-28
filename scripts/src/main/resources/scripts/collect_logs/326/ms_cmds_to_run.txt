@@ -1,0 +1,2 @@
+/opt/ericsson/nms/litp/bin/litp_state_backup.sh /tmp ||| litp_state_backup_run_output
+litp show_plan ||| litp_plan.txt

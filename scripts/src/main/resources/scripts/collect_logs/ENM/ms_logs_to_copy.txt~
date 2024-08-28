@@ -1,0 +1,19 @@
+/var/log/messages var_log_messages
+/var/log/mcollective.log mcollective.log
+/var/log/mcollective-audit.log mcollective-audit.log
+/var/lib/litp/core/model/LAST_KNOWN_CONFIG LAST_KNOWN_CONFIG
+/opt/ericsson/enminst/log/patch_rhel.log patch_rhel.log
+/var/log/boot.log boot.log
+/var/log/yum.log yum.log
+/var/tmp/enm-version enm-version
+/etc/litp-release litp-release
+/var/log/enminst.log enminst.log
+/var/log/audit/audit.log audit.log
+/ericsson/deploymentDescriptions/2svc_enm_physical_test_dd.xml 2svc_enm_physical_test_dd.xml
+/opt/ericsson/nms/litp/etc/puppet/manifests/plugins/ plugins
+/var/log/litp/ var_log_litp
+/var/log/cobbler/ cobbler
+/var/log/httpd/ httpd
+/var/log/hyperic/ hyperic
+/var/log/tuned/ tuned
+

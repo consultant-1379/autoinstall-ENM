@@ -1,0 +1,4 @@
+/opt/ericsson/nms/litp/bin/litp_state_backup.sh /tmp ||| litp_state_backup_run_output
+/opt/ericsson/enminst/bin/enm_healthcheck.sh --action enminst_healthcheck ||| enminst_healthcheck.txt
+/opt/ericsson/enminst/bin/enm_healthcheck.sh --action vcs_service_group_healthcheck -v ||| vcs_SG_healthcheck.txt
+litp show_plan ||| litp_plan.txt

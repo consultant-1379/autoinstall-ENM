@@ -1,0 +1,9 @@
+/var/log/messages var_log_messages
+/var/log/audit/audit.log audit.log
+/var/log/litp/litp_libvirt.log litp_libvirt.log
+/var/log/mcollective.log mcollective.log
+/var/log/mcollective-audit.log mcollective-audit.log
+/var/log/boot.log boot.log
+/var/VRTSvcs/log/ VRTSvcs
+/etc/VRTSvcs/conf/config/ VRTSvcs_conf
+/var/coredumps/ coredumps

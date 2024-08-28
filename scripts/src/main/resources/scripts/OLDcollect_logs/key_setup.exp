@@ -1,0 +1,13 @@
+#!/usr/bin/expect
+
+set hostname [lindex $argv 0]
+spawn ssh -o StrictHostKeyChecking=no litp-admin@$hostname
+
+expect {
+  -re ".*s password" {
+    exp_send "12shroot\r"
+    exp_continue
+  }
+  -re ".*~].*" {
+  }
+}

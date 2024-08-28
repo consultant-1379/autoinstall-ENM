@@ -1,0 +1,2 @@
+virsh list ||| virsh_list.txt
+hastatus -sum ||| hastatus_sum.txt

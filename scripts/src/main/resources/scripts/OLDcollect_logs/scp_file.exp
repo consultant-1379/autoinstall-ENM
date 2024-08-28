@@ -1,0 +1,16 @@
+#!/usr/bin/expect
+
+set hostname [lindex $argv 0]
+set file_to_cp [lindex $argv 1]
+set target_dir [lindex $argv 2]
+spawn scp litp-admin@$hostname:$file_to_cp $target_dir
+
+expect {
+  -re ".*s password" {
+    exp_send "12shroot\r"
+    exp_continue
+  }
+  -re ".*~].*" {
+    exp_send "ls $file_to_cp\r"
+  }
+}

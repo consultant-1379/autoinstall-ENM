@@ -1,0 +1,2 @@
+Run from the gateway like so:
+python collect_logs.py <SYS>

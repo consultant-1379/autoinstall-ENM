@@ -1,0 +1,6 @@
+/var/log/messages var_log_messages
+/var/log/mcollective.log mcollective.log
+/var/log/mcollective-audit.log mcollective-audit.log
+/var/lib/litp/core/model/LAST_KNOWN_CONFIG LAST_KNOWN_CONFIG
+/opt/ericsson/nms/litp/etc/puppet/manifests/ plugins
+/var/log/yum.log yum.log
